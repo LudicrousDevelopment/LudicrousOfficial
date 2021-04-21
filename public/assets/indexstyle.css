@@ -1,0 +1,407 @@
+      p {
+        color: white;
+      }
+      h1 {
+        color: white;
+      }
+      sub {
+        color: white;
+      }
+      b {
+        color: white;
+      }
+      body {
+        overflow-x: hidden; 
+        overflow-y: auto;
+        background: linear-gradient(-45deg, #000000, #101010, #202020, #404040, #606060);
+        background-size: 400% 400%;
+        animation: gradient 20s ease infinite;
+      }
+      @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+      p {
+        font-size: 20px;
+      }
+      html, body {
+        min-width: 1140px;
+        overflow: hidden;
+        font-family: monospace;
+        text-align: center;
+        margin:0;
+        padding:0;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      h4 {
+        text-align: center;
+        margin-bottom: 0;
+        color: white;
+        font-size: 25px;
+      }
+      .p {
+        color: white;
+        position: absolute;
+        bottom: 20%;
+        left: 14%;
+      }
+      p {
+        font-size: 20px;
+        margin-top: 25px;
+      }
+      div {
+        text-align: center;
+      }
+      .inputurl {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      body{
+        height: 100%;
+      }
+      .logodiv {
+        width: 185px;
+        height: 55.44px;
+        position: absolute;
+        left: 20%;
+        top: 0.5%;
+        -webkit-transition: color 0.5s, width 0.5s;
+        transition: color 0.5s, width 0.5s;
+      }
+      .logodiv:hover {
+        cursor: pointer;
+        width: 190px;
+      }
+      .button {
+  border-radius: 5px;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+  width: 115px;
+  height: 35px;
+  border: solid;
+}
+.proxybutton {
+  background: none;
+  width: 130px;
+  height: 35px;
+  color: rgb(255, 255, 255); 
+  border: solid;
+}
+.proxybutton:hover {
+  background: none;
+  color: #4057C8;
+}
+.proxybutton:active {
+  background: none;
+  color: #4057C8;
+}
+.navbutton {
+  border: none;
+  width: 110px;
+  color: rgb(255, 255, 255); 
+  background: none;
+  -webkit-transition: color 0.5s, font-size 0.5s;
+  transition: color 0.5s, font-size 0.5s;
+  font-size: 16px;
+  padding-bottom: 10px;
+  height: 65px;
+  margin-top: -8px;
+}
+.wpb {
+  width: 130px;
+}
+.navbutton:hover {
+  color: #4057C8;
+  font-size: 17px;
+}
+.nbactive {
+  color: rgb(45, 59, 122);
+  background: none;
+  border: none
+}
+.nbactive:hover {
+  color: rgb(45, 59, 122);
+}
+.gobutton {
+  background: none;
+  color: rgb(255, 255, 255); 
+  border: solid;
+  transition: 0.4s;
+  width: 175px;
+  height: 50px;
+  font-size: 18px;
+}
+.gobutton:hover {
+  background: none;
+  color: #7289DA;
+  -webkit-transition: color ease-in 0.5s;
+  transition: color ease-in 0.5s;
+}
+.gobutton:hover::placeholder {
+  background: none;
+  color: #7289DA;
+  -webkit-transition: color ease-in-out 0.5s;
+  transition: color ease-in-out 0.5s;
+}
+.sinput {
+  border: 1px solid white 5px;
+}
+.gobutton:focus {
+  background: none;
+  color: #7289DA;
+}
+.gobutton::after {
+  content: "Unblock Now!";
+}
+
+.gobutton:hover::after {
+  content: "Great!";
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+.gobuttontext {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+      .input {
+  background-color: rgb(24, 24, 24);
+  border-color: rgb(255, 255, 255);
+  border-width: 2px;
+  border-radius: 5px;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: solid;
+}
+.inputurl {
+  background-color: rgb(124, 124, 124); 
+  color: white; 
+}
+.inputurl::placeholder{
+  color: lightgray;
+}
+.inputurl:focus {
+  background-color: rgb(95, 104, 226)
+}
+.footer {
+  position: absolute;                 
+  left: 0; bottom: 0; right: 0;
+  padding: 0 0;
+}
+
+.nodiscordbutton {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  opacity: 1;
+  background-color: #30363D;
+  border: 0.4px solid rgb(92, 92, 92);
+  border-radius: 3px;
+  margin-bottom:5px;
+  margin-left: 150px;
+}
+.nodiscordbutton:hover {
+  background-color: rgb(71, 71, 71);
+  border: 1px solid rgb(99, 99, 99)
+}
+.githubbutton {
+  color: #7289DA;
+  width: 28px;
+  height: 28px;
+  background-color: #30363D;
+  border: 0.4px solid rgb(92, 92, 92);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.githubbutton:hover {
+  background-color: rgb(71, 71, 71);
+  border: 1px solid rgb(99, 99, 99)
+}
+input {
+  margin-top: 10px;
+}
+
+.navbar {
+  position: absolute;
+  text-align: left;
+  left: 50%;
+  right: 0;
+  top: 1.4%;
+  height: 35px;
+}
+
+.settingbutton {
+  background: none;
+  width: 130px;
+  height: 35px;
+  color: rgb(255, 255, 255); 
+  border: solid;
+}
+.settingbutton:hover {
+  background: none;
+  color: #7289DA;
+  -webkit-transition: color ease-in 0.5s;
+  transition: color ease-in 0.5s;
+}
+.settingbutton:hover::placeholder {
+  background: none;
+  color: #7289DA;
+  -webkit-transition: color ease-in-out 0.5s;
+  transition: color ease-in-out 0.5s;
+}
+.sinput {
+  border: 1px solid white 5px;
+}
+.settingbutton:focus::placeholder {
+  color: #7289DA;
+}
+.settingbutton:focus {
+  background: none;
+  color: #7289DA;
+}
+      .sbutton {
+  border-width: 1px;
+  border-radius: 5px;
+  color: white;
+  padding: 4px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.8s;
+  cursor: pointer;
+}
+.gdb {
+  text-align: center;
+}
+.gimg {
+  background-repeat: no-repeat;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.p {
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 600px) {
+  div {
+    text-align: center;
+  }
+  .navbar {
+    display: none;
+  }
+  .navbutton {
+    display: none;
+  }
+  .navbuttonactive {
+    display: none;
+  }
+  .logodiv {
+    display: none;
+  }
+  p {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  .small {
+  white-space: initial;
+}
+body {
+  overflow-x: hidden; 
+  overflow-y: auto;
+}
+.footer {
+  position: absolute;                 
+  left: 0; bottom: 0; right: 0;
+}
+      body {
+        font-family: monospace;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+      }
+      input::placeholder {
+        font-size: 15px;
+      }
+.gobutton {
+  width: 130px;
+  height: 50px;
+  background-color: rgb(24, 24, 24); 
+  color: rgb(255, 255, 255);
+  font-size: 15px; 
+}
+.proxybutton {
+  width: 100px;
+  height: 35px;
+  background-color: rgb(24, 24, 24); 
+  color: rgb(255, 255, 255); 
+  font-size: 15px;
+}
+}
+
+@media only screen and (max-height: 540px) {
+  .discordbutton {
+    display: none;
+  }
+}
+@media only screen and (max-height: 510px) {
+  .githubbutton {
+    display: none;
+  }
+}
+@media only screen and (max-height: 475px) {
+  .p {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 620px) {
+  .filler {
+    text-align: center;
+  }
+  body {
+  overflow-x: hidden; 
+  overflow-y: shown;
+  }
+}

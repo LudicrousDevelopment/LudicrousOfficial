@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Iboss Generator</title>
+    <link rel="stylesheet" href="/assets/indexstyle.css">
+  </head>
+  <body>
+
+<div>    <header><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <h1>IBoss Block Page Generator</h1><br>
+      </header>
+    <div class="form__group">
+    <input class="sbutton settingbutton" placeholder="Group Name" id="group">
+    <br>
+    <input class="sbutton settingbutton" placeholder="Group Number" id="groupn">
+    <br>
+    <input class="sbutton settingbutton" placeholder="Blocked Page" id="blocked">
+    <br>
+    <input class="sbutton settingbutton" placeholder="Reason of Block" id="desc">
+    <br>
+    <input class="sbutton settingbutton" placeholder="IP Address" id="ip">
+    <br>
+    <input class="sbutton settingbutton" placeholder="UserName" id="user">
+    <br>
+    <button class="button proxybutton" onclick="generate()">Generate!</button>
+    </div>
+    </div>
+
+    <script>
+            function generate() {
+var group = document.getElementById("group").value;
+var groupn = document.getElementById("groupn").value;
+var blocked = document.getElementById("blocked").value;
+var desc = document.getElementById("desc").value;
+var ip = document.getElementById("ip").value;
+var user = document.getElementById("user").value;
+
+  window.open("https://cn1759620794-7vnsr30257.ibosscloud.com/syncCustomBranding/block_page/122385/9534/9534-block_page.html?fn="+ group +"&fp="+ groupn +"&bu="+ blocked +"%2F&bc="+ desc +"&ip="+ ip +"&ibip=cn1759617723-vnsg11042.ibosscloud.com&user="+ user +"%20&ipm=cn1759617911-vnsg11308.ibosscloud.com")
+}
+    </script>
+        <head>
+    <script async src="https://arc.io/widget.min.js#Uj7TAd9Q"></script>
+<footer class="footer">
+  <div class="footerspan">
+  <p class="p">Made by EnderKingJ</p>
+
+  <button class="githubbutton" style="background-size:contain;background-repeat:no-repeat;position:absolute;bottom:22%;margin:auto;"  onclick="window.open('https://github.com/voidnetwork-dev/ludicrous')"><img src="/assets/github.png" class="gimg"></img></button>  
+
+<div style="margin-left:40%;">
+
+  <button onclick="window.open('https://discord.gg/qn4bGpxYPC')" class="nodiscordbutton"><strong>Discord</strong></button>
+    <button onclick="window.open('https://github.com/titaniumnetwork-dev/')" class="nodiscordbutton"><strong>TN</strong></button>
+  <br>
+<button onclick="location.href = '/credits'" class="nodiscordbutton" style="margin-bottom:20px;"><strong>Credits</strong></button>
+    <button onclick="window.open('https://github.com/titaniumnetwork-dev/molten')" class="nodiscordbutton"><strong>Molten</strong></button>
+    </div>
+</div>
+  </footer>
+  </div>
+  </div>
+  </head>
+<script src="assets/pageft.js"></script>
+  </body>
+</html>
