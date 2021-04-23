@@ -1,6 +1,6 @@
 # Ludicrous
 
-Ludicrous is an upcoming web proxy site.
+Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.
 
 **Dependencies:**
 

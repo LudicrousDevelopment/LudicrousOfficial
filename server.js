@@ -241,30 +241,6 @@ app.get('/emulate', function(req, res){
 res.sendFile('/gpages/assets/css/gfiles/rarch/index.html', { root: __dirname + '/public' });
 });
 
-app.get('/2048', function(req, res){
-res.redirect('/gpages/assets/html/2048/index.html');
-});
-
-app.get('/asteroids', function(req, res){
-res.redirect('/gpages/assets/html/asteroids/index.html');
-});
-
-app.get('/astray', function(req, res){
-res.redirect('/gpages/assets/html/astray/index.html');
-});
-
-app.get('/backcountry', function(req, res){
-res.redirect('/gpages/assets/html/backcountry/index.html');
-});
-
-app.get('/bounceback', function(req, res){
-res.redirect('/gpages/assets/html/bounceback/index.html');
-});
-
-app.get('/breaklock', function(req, res){
-res.redirect('/gpages/assets/html/breaklock/index.html');
-});
-
 app.get('/html5', function(req, res){
 res.sendFile('/gpages/html5.html', { root: __dirname + '/public' });
 });
