@@ -1,8 +1,8 @@
-Ludicrous
+# Ludicrous
 
 Ludicrous is an upcoming web proxy site.
 
-**Dependencies**
+**Dependencies:**
 
 First, [Install Git](https://git-scm.com/downloads)
 
