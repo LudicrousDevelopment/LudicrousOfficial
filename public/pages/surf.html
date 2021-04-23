@@ -11,19 +11,21 @@
     <meta name="theme-color" content="#0d0d0d" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-         <pre><h4></h4><br></pre>
-         <div class="navbar">
-         <button onclick="location.href = '/home';" class="button proxybutton">Home</button>
-<button class="button proxybuttonactive">Web Proxies</button>
-<button onclick="location.href = '/play';" class="button proxybutton">Games</button>
-<button onclick="location.href = '/chat';" class="button proxybutton">Chatbox</button>
-<button onclick="location.href = '/settings';" class="button proxybutton">Settings</button>
+
+    <div id="nav">
+    <img src='/assets/title.png' onclick="document.location = '/home'" class="logodiv">
+    <!--Nav Bar-->
+
+     <div class="navbar">
+<button onclick="location.href = '/surf';" class="button navbutton wpb">Web Proxies</button>
+<button class="button navbutton" onclick="location.href = '/search';">Search</button>
+<button onclick="location.href = '/play';" class="button navbutton">Games</button>
+<button onclick="location.href = '/chat';" class="button navbutton">Chatbox</button>
+<button class="button navbutton nbactive">Utilities</button><br>
 </div>
+</div>
+<body>
 <pre>
-
-
-
-
 
 
 
@@ -50,18 +52,18 @@
     <script src="assets/surf.js"></script>
 <footer class="footer">
   <div class="footerspan">
+
+
+  <button class="githubbutton" style="background-size:contain;background-repeat:no-repeat;position:absolute;bottom:30%;margin:auto;"  onclick="window.open('https://github.com/voidnetwork-dev/ludicrousofficial')"><img src="/assets/github.png" class="gimg"></img></button>  
   <p class="p">Made by EnderKingJ, Karlee Rae, and ZDC54</p>
-
-  <button class="githubbutton" style="background-size:contain;background-repeat:no-repeat;position:absolute;bottom:22%;margin:auto;"  onclick="window.open('https://github.com/voidnetwork-dev/ludicrous')"><img src="/assets/github.png" class="gimg"></img></button>  
-
-<div style="margin-left:40%;">
-
+<div style="margin-left:40%;padding: 0;">
+  
   <button onclick="window.open('https://discord.gg/qn4bGpxYPC')" class="nodiscordbutton"><strong>Discord</strong></button>
     <button onclick="window.open('https://github.com/titaniumnetwork-dev/')" class="nodiscordbutton"><strong>TN</strong></button>
   <br>
 <button onclick="location.href = '/credits'" class="nodiscordbutton" style="margin-bottom:20px;"><strong>Credits</strong></button>
-    <button onclick="window.open('https://github.com/titaniumnetwork-dev/molten')" class="nodiscordbutton"><strong>Molten</strong></button>
-    </div>
+    <button onclick="window.open('https://github.com/titaniumnetwork-dev/molten')" class="nodiscordbutton"><strong>Molten</strong></button> 
+   </div>
 </div>
   </footer>
   </div>
@@ -70,18 +72,3 @@
 <script src="assets/pageft.js"></script>
   </body>
 </html>
-  <script>
-    function guide() {
-window.open('http://'+document.location.host+'/guide','popupad','width=400,height=400')
-}
-</script>
-    <script>
-          const cookieValue = document.cookie
-  .split('; ')
-  .find(row => row.startsWith('title='))
-  .split('=')[1];
-
-function alertCookieValue() {
-  document.title = cookieValue;
-}
-    </script>

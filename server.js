@@ -91,20 +91,13 @@ return;
 
 
 app.get('/unb', function(req, res){
-  requrl = req.query.url
-  if (requrl.indexOf('.com, .org. .net', '.ml', '.gq', '.ga', '.cf', '.xyz', '.co') !== -1) {
     requrl = req.query.url
     urlenc = Buffer.from(requrl).toString('base64');
-    res.redirect('/'+config.prefix+'?id='+urlenc) 
-} else {
-    requrl = 'google.com/search?q='+req.query.url
-    urlenc = Buffer.from(requrl).toString('base64');
-    res.redirect('/'+config.prefix+'?id='+urlenc)
-}
+    res.redirect('/'+config.prefix) 
 });
 
 app.get('/'+config.prefix, function(req, res){
-    url = atob(req.query.id)
+    url = atob(urlenc)
     url2 = url
 
 var string = url;
@@ -170,7 +163,7 @@ res.setHeader("content-type", "text/html");
     }
 code = code.replace(/href=".\//gi, '/unb?url='+domain + '/');
 code = code.replace(/href="(?!https:\/\/|\/)/gi, '/unb?url='+url2 + '/');
-code = code.replace(/href="\//gi, 'href=/unb?url'+domain + '/');
+code = code.replace(/href="\//gi, 'href=/unb?url'+'='+domain + '/');
 code = code.replace(/content="\//gi, 'content="' + url2 + '/');
 code = code.replace(/action="\//gi, 'content="' + domain + '/');
 code = code.replace(/a href="https\:\/\/www./gi, 'a href="https://"+document.location.host+"/unb?url"+domain');
@@ -236,10 +229,6 @@ res.sendFile('/surfpages/womginx.html', { root: __dirname + '/public' });
 
 app.get('/alloy', function(req, res){
 res.sendFile('/surfpages/alloy.html', { root: __dirname + '/public' });
-});
-
-app.get('/search', function(req, res){
-res.sendFile('/pages/search.html', { root: __dirname + '/public' });
 });
 
 // Games
