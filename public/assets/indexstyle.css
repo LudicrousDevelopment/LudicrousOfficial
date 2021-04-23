@@ -13,9 +13,8 @@
       body {
         overflow-x: hidden; 
         overflow-y: auto;
-        background: linear-gradient(-45deg, #000000, #101010, #202020, #404040, #606060);
-        background-size: 400% 400%;
-        animation: gradient 20s ease infinite;
+        background: linear-gradient(-45deg, #101010, #121212, #303030);
+        background-size: 100% 100%;
       }
       @keyframes gradient {
     0% {
@@ -53,7 +52,7 @@
         color: white;
         position: absolute;
         bottom: 20%;
-        left: 14%;
+        left: 10%;
       }
       p {
         font-size: 20px;
@@ -81,6 +80,10 @@
       .logodiv:hover {
         cursor: pointer;
         width: 190px;
+      }
+      .footerspan {
+        height: 100%;
+        padding-top: 24px;
       }
       .button {
   border-radius: 5px;
@@ -227,15 +230,15 @@
   height: 28px;
   text-align: center;
   opacity: 1;
-  background-color: #30363D;
-  border: 0.4px solid rgb(92, 92, 92);
+  background: none;
+  border: none;
   border-radius: 3px;
   margin-bottom:5px;
   margin-left: 150px;
 }
 .nodiscordbutton:hover {
-  background-color: rgb(71, 71, 71);
-  border: 1px solid rgb(99, 99, 99)
+  border: 1px solid rgb(99, 99, 99);
+  cursor: pointer;
 }
 .githubbutton {
   color: #7289DA;
@@ -248,7 +251,8 @@
 }
 .githubbutton:hover {
   background-color: rgb(71, 71, 71);
-  border: 1px solid rgb(99, 99, 99)
+  border: 1px solid rgb(99, 99, 99);
+  cursor: copy;
 }
 input {
   margin-top: 10px;
