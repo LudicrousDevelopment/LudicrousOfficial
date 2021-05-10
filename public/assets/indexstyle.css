@@ -1,3 +1,4 @@
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
       p {
         color: white;
       }
@@ -10,11 +11,18 @@
       b {
         color: white;
       }
-      body {
-        overflow-x: hidden; 
-        overflow-y: auto;
+      html, body {
         background: linear-gradient(-45deg, #101010, #121212, #303030);
-        background-size: 100% 100%;
+        background-size: 200% 200%;
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 2px;
+      }
+      .body {
+        overflow: hidden;
+      }
+      pre {
+        font-family: "Roboto", sans-serif;
+        letter-spacing: 3px;
       }
       @keyframes gradient {
     0% {
@@ -30,14 +38,13 @@
       p {
         font-size: 20px;
       }
-      html, body {
+      body {
         min-width: 1140px;
-        overflow: hidden;
-        font-family: monospace;
+        font-family: "Roboto", sans-serif;
         text-align: center;
         margin:0;
         padding:0;
-      }
+        } 
       h1 {
         text-align: center;
         margin-bottom: 0;
@@ -50,13 +57,17 @@
       }
       .p {
         color: white;
-        position: absolute;
-        bottom: 20%;
-        left: 10%;
+      }
+      .pdiv {
+        float: left;
+        margin-left: 300px;
+        width: 250px;
+        text-align: right;
+        height: 100%;
       }
       p {
         font-size: 20px;
-        margin-top: 25px;
+        display: inline;
       }
       div {
         text-align: center;
@@ -65,14 +76,11 @@
         margin-top: 0;
         margin-bottom: 10px;
       }
-      body{
-        height: 100%;
-      }
       .logodiv {
         width: 185px;
         height: 55.44px;
         position: absolute;
-        left: 20%;
+        left: 10%;
         top: 0.5%;
         -webkit-transition: color 0.5s, width 0.5s;
         transition: color 0.5s, width 0.5s;
@@ -82,8 +90,9 @@
         width: 190px;
       }
       .footerspan {
-        height: 100%;
+        height: 80px;
         padding-top: 24px;
+        background: none;
       }
       .button {
   border-radius: 5px;
@@ -122,9 +131,9 @@
   background: none;
   -webkit-transition: color 0.5s, font-size 0.5s;
   transition: color 0.5s, font-size 0.5s;
-  font-size: 16px;
+  font-size: 15px;
   padding-bottom: 10px;
-  height: 65px;
+  height: 55px;
   margin-top: -8px;
 }
 .wpb {
@@ -132,20 +141,22 @@
 }
 .navbutton:hover {
   color: #4057C8;
-  font-size: 17px;
+  font-size: 16px;
 }
 .nbactive {
-  color: rgb(45, 59, 122);
+  color: rgb(89, 98, 180);
   background: none;
   border: none
 }
 .nbactive:hover {
-  color: rgb(45, 59, 122);
+  color: rgb(89, 98, 180);
 }
 .gobutton {
   background: none;
   color: rgb(255, 255, 255); 
   border: solid;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   transition: 0.4s;
   width: 175px;
   height: 50px;
@@ -217,12 +228,22 @@
 .inputurl:focus {
   background-color: rgb(95, 104, 226)
 }
-.footer {
-  position: absolute;                 
-  left: 0; bottom: 0; right: 0;
-  padding: 0 0;
+html, body {
+  height: 100%;
+  margin: 0;
 }
-
+.footer {
+  background: #202020;
+  border-top: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-shadow: #303030 0px 0px 10px 0px;
+  -khtml-box-shadow: #303030 0px 0px 10px 0px;
+  -moz-box-shadow: #303030 0px 0px 10px 0px;
+  box-shadow: #303030 0px 0px 10px 0px;
+}
 .nodiscordbutton {
   color: rgb(255, 255, 255);
   font-size: 15px;
@@ -236,6 +257,45 @@
   margin-bottom:5px;
   margin-left: 150px;
 }
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #dddddd; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.gamesdiv {
+  width: 800px;
+  height: 60vh;
+  border: 5px solid #dddddd;
+  background: #202020;
+  background-size: 100% 100%;
+  border-radius: 4px;
+  margin: auto;
+  overflow: auto;
+}
+.games-frame {
+  overflow: scroll;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.games-frame iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
 .nodiscordbutton:hover {
   border: 1px solid rgb(99, 99, 99);
   cursor: pointer;
@@ -247,7 +307,6 @@
   background-color: #30363D;
   border: 0.4px solid rgb(92, 92, 92);
   border-radius: 20px;
-  margin-bottom: 20px;
 }
 .githubbutton:hover {
   background-color: rgb(71, 71, 71);
@@ -286,15 +345,42 @@ input {
   -webkit-transition: color ease-in-out 0.5s;
   transition: color ease-in-out 0.5s;
 }
-.sinput {
-  border: 1px solid white 5px;
-}
 .settingbutton:focus::placeholder {
   color: #7289DA;
 }
 .settingbutton:focus {
   background: none;
   color: #7289DA;
+}
+.htmlbutton {
+  background: none;
+  width: 32%;
+  height: 75px;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255); 
+  border: solid;
+}
+.htmlbutton:hover {
+  background: none;
+  color: #7289DA;
+  -webkit-transition: color ease-in 0.5s;
+  transition: color ease-in 0.5s;
+}
+.htmlbutton:hover::placeholder {
+  background: none;
+  color: #7289DA;
+  -webkit-transition: color ease-in-out 0.5s;
+  transition: color ease-in-out 0.5s;
+}
+.htmlbutton:focus::placeholder {
+  color: #7289DA;
+}
+.htmlbutton:focus {
+  background: none;
+  color: #7289DA;
+}
+.sinput {
+  border: 1px solid white 5px;
 }
       .sbutton {
   border-width: 1px;
@@ -316,15 +402,6 @@ input {
   background-repeat: no-repeat;
   width: 21px;
   height: 21px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.p {
-  margin-bottom: 10px;
 }
 @media only screen and (max-width: 600px) {
   div {
@@ -354,10 +431,6 @@ input {
 body {
   overflow-x: hidden; 
   overflow-y: auto;
-}
-.footer {
-  position: absolute;                 
-  left: 0; bottom: 0; right: 0;
 }
       body {
         font-family: monospace;

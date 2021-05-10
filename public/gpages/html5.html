@@ -30,63 +30,65 @@
 
 
 
-
-
-
-
     <div></pre>
 <h1>Games</h1><br>
-<p>Are Your Favorite Games Blocked? Play These!</p>
-<button onclick="location.href = '/gpages/assets/html5/2048/index.html';" class="button settingbutton">2048</button>
-<button onclick="location.href = '/gpages/assets/html5/asteroids/index.html';" class="button settingbutton">Asteroids</button>
-<button onclick="location.href = '/gpages/assets/html5/astray/index.html';" class="button settingbutton">Astray</button>
-<button onclick="location.href = '/gpages/assets/html5/backcountry/index.html';" class="button settingbutton">Backcountry</button>
-<button onclick="location.href = '/gpages/assets/html5/bounceback/index.html';" class="button settingbutton">Bounceback</button>
-<br>
-<button onclick="location.href = '/gpages/assets/html5/breaklock/index.html';" class="button settingbutton">Breaklock</button>
-<button onclick="location.href = '/gpages/assets/html5/breakout/index.html';" class="button settingbutton">Breakout</button>
-<button onclick="location.href = '/gpages/assets/html5/chess/index.html';" class="button settingbutton">Chess</button>
-<button onclick="location.href = '/gpages/assets/html5/chromaincident/index.html';" class="button settingbutton">Chroma Incident</button>
-<br>
-<button onclick="location.href = '/gpages/assets/html5/connect3/index.html';" class="button settingbutton">Connect 3</button>
-<button onclick="location.href = '/gpages/assets/html5/cookieclicker/index.html';" class="button settingbutton">Cookie Clicker</button>
-<button onclick="location.href = '/gpages/assets/html5/evilglitch/index.html';" class="button settingbutton">Evil Glitch</button>
-<button onclick="location.href = '/gpages/assets/html5/factoryballsforever/index.html';" class="button settingbutton">Factory Balls</button>
-<button onclick="location.href = '/gpages/assets/html5/flappybird/index.html';" class="button settingbutton">Flappybird</button>
-<br>
-  <!-- testing deleting node_modules-->
-<button onclick="location.href = '/gpages/assets/html5/geometrydash/index.html';" class="button settingbutton">Geometry Dash</button>
-<button onclick="location.href = '/gpages/assets/html5/hextris/index.html';" class="button settingbutton">Hextris</button>
-<button onclick="location.href = '/gpages/assets/html5/konnekt/index.html';" class="button settingbutton">Konnekt</button>
-<button onclick="location.href = '/gpages/assets/html5/krunker/index.html';" class="button settingbutton">Krunker</button>
-<button onclick="location.href = '/gpages/assets/html5/linuxvm/index.html';" class="button settingbutton">Linuxvm</button>
-<button onclick="location.href = '/gpages/assets/html5/minecraft/index.html';" class="button settingbutton">Minecraft</button>
-<button onclick="location.href = '/gpages/assets/html5/opensyobonaction/shell.html';" class="button settingbutton">Syobon Action</button>
-<button onclick="location.href = '/gpages/assets/html5/pushback/index.html';" class="button settingbutton">Pushback</button>
-<button onclick="location.href = '/gpages/assets/html5/racer/index.html';" class="button settingbutton">Racer</button>
-<button onclick="location.href = '/gpages/assets/html5/radiusraid/index.html';" class="button settingbutton">Radiusraid</button>
-<button onclick="location.href = '/gpages/assets/html5/retrohaunt/index.html';" class="button settingbutton">Retrohaunt</button>
-<button onclick="location.href = '/gpages/assets/html5/roadblocks/index.html';" class="button settingbutton">Roadblocks</button>
-<button onclick="location.href = '/gpages/assets/html5/run3/index.html';" class="button settingbutton">Run 3</button>
-<button onclick="location.href = '/gpages/assets/html5/backcountry/index.html';" class="button settingbutton">Sleeping Beauty</button>
-<button onclick="location.href = '/gpages/assets/html5/snake/index.html';" class="button settingbutton">Snake</button>
-<button onclick="location.href = '/gpages/assets/html5/spacecompany/index.html';" class="button settingbutton">Space Company</button>
-<button onclick="location.href = '/gpages/assets/html5/titris/index.html';" class="button settingbutton">Tetris</button>
-<button onclick="location.href = '/gpages/assets/html5/towermaster/index.html';" class="button settingbutton">Towermaster</button>
-<button onclick="location.href = '/gpages/assets/html5/underrun/index.html';" class="button settingbutton">Underrun</button>
-<button onclick="location.href = '/gpages/assets/html5/xx142-b2exe/index.html';" class="button settingbutton">xx142-b2exe</button>
-
-<br><br>
-</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p>Are Your Favorite Games Blocked? Play These!</p><br><br><br>
+<div class="gamesdiv" id="gamesdiv">
+<button class="" onclick="document.getElementById('gframe').src = 'gpages/assets/html5frame.html';">Back Home</button>
+<button class="" onclick="document.getElementById('gframe').contentWindow.location.reload();">Reload</button>
+<button class="" onclick="fullsc()">Fullscreen</button><br>
+<div id="gamesbtn">
+<button onclick="location.href = '/gpages/assets/html5/2048/index.html';" class="button htmlbutton">2048</button>
+<button onclick="location.href = '/gpages/assets/html5/asteroids/index.html';" class="button htmlbutton">Asteroids</button>
+<button onclick="location.href = '/gpages/assets/html5/astray/index.html';" class="button htmlbutton">Astray</button>
+<button onclick="location.href = '/gpages/assets/html5/backcountry/index.html';" class="button htmlbutton">Backcountry</button>
+<button onclick="location.href = '/gpages/assets/html5/bounceback/index.html';" class="button htmlbutton">Bounceback</button>
+<button onclick="location.href = '/gpages/assets/html5/breaklock/index.html';" class="button htmlbutton">Breaklock</button>
+<button onclick="location.href = '/gpages/assets/html5/breakout/index.html';" class="button htmlbutton">Breakout</button>
+<button onclick="location.href = '/gpages/assets/html5/chess/index.html';" class="button htmlbutton">Chess</button>
+<button onclick="location.href = '/gpages/assets/html5/chromaincident/index.html';" class="button htmlbutton">Chroma Incident</button>
+<button onclick="location.href = '/gpages/assets/html5/connect3/index.html';" class="button htmlbutton">Connect 3</button>
+<button onclick="location.href = '/gpages/assets/html5/cookieclicker/index.html';" class="button htmlbutton">Cookie Clicker</button>
+<button onclick="location.href = '/gpages/assets/html5/evilglitch/index.html';" class="button htmlbutton">Evil Glitch</button>
+<button onclick="location.href = '/gpages/assets/html5/factoryballsforever/index.html';" class="button htmlbutton">Factory Balls</button>
+<button onclick="location.href = '/gpages/assets/html5/flappybird/index.html';" class="button htmlbutton">Flappybird</button>
+<button onclick="location.href = '/gpages/assets/html5/geometrydash/index.html';" class="button htmlbutton">Geometry Dash</button>
+<button onclick="location.href = '/gpages/assets/html5/hextris/index.html';" class="button htmlbutton">Hextris</button>
+<button onclick="location.href = '/gpages/assets/html5/konnekt/index.html';" class="button htmlbutton">Konnekt</button>
+<button onclick="location.href = '/gpages/assets/html5/krunker/index.html';" class="button htmlbutton">Krunker</button>
+<button onclick="location.href = '/gpages/assets/html5/linuxvm/index.html';" class="button htmlbutton">Linuxvm</button>
+<button onclick="location.href = '/gpages/assets/html5/minecraft/index.html';" class="button htmlbutton">Minecraft</button>
+<button onclick="location.href = '/gpages/assets/html5/opensyobonaction/shell.html';" class="button htmlbutton">Syobon Action</button>
+<button onclick="location.href = '/gpages/assets/html5/pushback/index.html';" class="button htmlbutton">Pushback</button>
+<button onclick="location.href = '/gpages/assets/html5/racer/index.html';" class="button htmlbutton">Racer</button>
+<button onclick="location.href = '/gpages/assets/html5/radiusraid/index.html';" class="button htmlbutton">Radiusraid</button>
+<button onclick="location.href = '/gpages/assets/html5/retrohaunt/index.html';" class="button htmlbutton">Retrohaunt</button>
+<button onclick="location.href = '/gpages/assets/html5/roadblocks/index.html';" class="button htmlbutton">Roadblocks</button>
+<button onclick="location.href = '/gpages/assets/html5/run3/index.html';" class="button htmlbutton">Run 3</button>
+<button onclick="location.href = '/gpages/assets/html5/backcountry/index.html';" class="button htmlbutton">Sleeping Beauty</button>
+<button onclick="location.href = '/gpages/assets/html5/snake/index.html';" class="button htmlbutton">Snake</button>
+<button onclick="location.href = '/gpages/assets/html5/spacecompany/index.html';" class="button htmlbutton">Space Company</button>
+<button onclick="location.href = '/gpages/assets/html5/titris/index.html';" class="button htmlbutton">Tetris</button>
+<button onclick="location.href = '/gpages/assets/html5/towermaster/index.html';" class="button htmlbutton">Towermaster</button>
+<button onclick="location.href = '/gpages/assets/html5/underrun/index.html';" class="button htmlbutton">Underrun</button>
+<button onclick="location.href = '/gpages/assets/html5/xx142-b2exe/index.html';" class="button htmlbutton">xx142-b2exe</button>
+<button onclick="location.href = '/gpages/assets/html5/fnf/index.html';" class="button htmlbutton">Friday Night Funkin'</button>
+<button onclick="location.href = '/gpages/assets/html5/slope/index.html';" class="button htmlbutton">Slope</button>
+<button onclick="location.href = '/gpages/assets/html5/pixel-combat-2/index.html';" class="button htmlbutton">Pixel Combat 2</button>
+</div>
+<iframe width="100%" height="100%" id="gframe" src="gpages/assets/html5frame.html" style="display:none;">
+</iframe>
+</div>
+</div><br><br><br><br><br><br><br><br><br><br>
 
     <head>
-    <script async src="https://arc.io/widget.min.js#Uj7TAd9Q"></script>
-<footer class="footer">
+    <script async src="https://arc.io/widget.min.js#Uj7TAd9Q"></script></head>
+<div class="footer">
   <div class="footerspan">
 
 
   <button class="githubbutton" style="background-size:contain;background-repeat:no-repeat;position:absolute;bottom:30%;margin:auto;"  onclick="window.open('https://github.com/voidnetwork-dev/ludicrousofficial')"><img src="/assets/github.png" class="gimg"></img></button>  
-  <p class="p">Made by EnderKingJ, Karlee Rae, and ZDC54</p>
+  <p class="p">Ludicrous</p>
 <div style="margin-left:40%;padding: 0;">
   
   <button onclick="window.open('https://discord.gg/qn4bGpxYPC')" class="nodiscordbutton"><strong>Discord</strong></button>
@@ -96,10 +98,12 @@
     <button onclick="window.open('https://github.com/titaniumnetwork-dev/molten')" class="nodiscordbutton"><strong>Molten</strong></button> 
    </div>
 </div>
-  </footer>
   </div>
   </div>
-  </head>
+  </div>
 <script src="assets/pageft.js"></script>
+<script>
+  
+</script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const fetch = require('node-fetch');
+const storage = require('node-sessionstorage')
 config = require(__dirname + '/config.json'),
 
 atob = str => new Buffer.from(str, 'base64').toString('utf-8')
@@ -88,11 +89,9 @@ return;
     });
 });
 
-
-
 app.get('/unb', function(req, res){
     requrl = req.query.url
-    urlenc = Buffer.from(requrl).toString('base64');
+    urlenc = requrl;
     res.redirect('/'+config.prefix) 
 });
 
@@ -245,16 +244,29 @@ app.get('/html5', function(req, res){
 res.sendFile('/gpages/html5.html', { root: __dirname + '/public' });
 });
 
-// 404 Page
+app.get('/flashem', function(req, res){
+res.redirect('/gpages/assets/flash/index.html')
+});
+
+//Licensed
+
+app.get('/licensed', function(req, res){
+res.sendFile('/pages/licensed.html', { root: __dirname + '/public' });
+});
+
+// 400 Pages
 
 app.use(function (req, res, next) {
   res.status(404).sendFile('/pages/error.html', {root: __dirname + '/public'})
 })
+app.get('/auth', function(req, res){
+res.sendFile('/pages/403.html', { root: __dirname + '/public' });
+});
 
 // DEPLOYMENT
 
 PORT = process.env.PORT || config.port
 
-app.listen(PORT, () => {
-console.log(`Server is Running at localhost:${ PORT }`);
+app.listen(PORT, function () {
+  console.log('Server listening on port '+PORT);
 });

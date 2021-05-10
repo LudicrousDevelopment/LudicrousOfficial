@@ -1,23 +1,33 @@
 {
   "name": "Ludicrous",
   "version": "1.0.0",
-  "description": "Ludicrous",
+  "description": "Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.",
   "main": "server.js",
   "dependencies": {
     "buffer": "^6.0.3",
     "express": "^4.17.1",
-    "http": "0.0.1-security",
+    "http": "^0.0.1-security",
     "https": "^1.0.0",
     "node-fetch": "^2.6.1",
-    "pip": "0.0.1",
-    "python": "0.0.4"
+    "node-localstorage": "^2.1.6",
+    "node-sessionstorage": "^1.0.0",
+    "pip": "^0.0.1",
+    "python": "^0.0.4"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoidNetwork-dev/LudicrousOfficial.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VoidNetwork-dev/LudicrousOfficial/issues"
+  },
+  "homepage": "https://github.com/VoidNetwork-dev/LudicrousOfficial#readme"
 }

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    <link href="/assets/style.css" type="stylesheet/css"/>
+    <link rel="stylesheet" href="/assets/indexstyle.css" type="text/css"/>
 		<title>Flash Player</title>
 		<style>
-			body {
-				overflow: hidden;
-				font-family: sans-serif;
-			}
-			
+			body, html {
+        background: linear-gradient(-45deg, #101010, #121212, #303030);
+        background-size: 100% 100%;
+        overflow: auto;
+      }
+      .gamesdiv {
+        top: 50%;
+				left: 50%;
+        padding: 175px 0;
+        height: 400px;
+        margin-top: 80px;
+      }
 			.main {
 				background: black;
 				position: absolute;
@@ -38,7 +45,10 @@
 				height: 200px;
 				width: 400px;
 				position: absolute;
-				background-color: #dddddd;
+        border: 5px solid #dddddd;
+        background: #252525;
+        background-size: 100% 100%;
+        border-radius: 4px;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
@@ -225,14 +235,13 @@
 		</script>
 		<script src="./ruffle.js"></script>
 	</head>
-	<body>
-		<div class="main" id="mainarea">
-			<div id="ffd" style="display: none;">
+	<body><br>
+		<div class="gamesdiv" style="margin-top:50px;" id="mainarea">
+			<div id="ffd" style="display:none;">
 				<h2>Flash Player Emulator</h2>
 				<input type="file" id="upload" accept=".swf, .spl">
 				<label for="upload">Choose File</label>
-				<a href="https://ruffle.rs" target="_blank" class="source">Source</a>
-			</div>
-		</div>
+      </div>
+		</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	</body>
 </html>

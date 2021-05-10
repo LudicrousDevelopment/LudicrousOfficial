@@ -1,3 +1,4 @@
+document.cookie = "cookie=cake"
 var favicon = {
     change: function(iconURL) {
         if (arguments.length == 2) {
@@ -65,5 +66,47 @@ document.addEventListener("keyup", function(event) {
       document.cookie="favicon="+document.getElementById('favurl').value;
   }
 });
+
+var elem = document.getElementById("gamesdiv");
+
+function fullsc() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { 
+    elem.msRequestFullscreen();
+  }
+}
+
+function getCookie(name) {
+    var dc = document.cookie;
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    }
+    else
+    {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    return decodeURI(dc.substring(begin + prefix.length, end));
+} 
+
+function doSomething() {
+    var myCookie = getCookie("MyCookie");
+
+    if (myCookie == null) {
+      window.location.assign('/403')
+    }
+    else {
+        // do cookie exists stuff
+    }
+}
 
 window.onload = favTitle();

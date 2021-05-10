@@ -23,8 +23,8 @@ document.cookie = "womginx_are_you_a_bot=no";
 window.location.assign("http://w."+document.location.host+"/main/"+url)
 }
 function voidnetgo() {
-var url = document.getElementById("url").value
-document.location = "https://"+document.location.hostname+"/unb?url="+url;
+var ainput = document.getElementById('url')
+window.location.assign('http://'+document.location.host+`/unb/?url=${btoa(ainput.value)}`);
 }
 
 function pygo() {
