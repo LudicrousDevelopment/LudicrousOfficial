@@ -2,6 +2,9 @@
 
 Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LudicrousDevelopment/LudicrousOfficial/tree/master)
+
+
 **Dependencies:**
 
 First, [Install Git](https://git-scm.com/downloads)
