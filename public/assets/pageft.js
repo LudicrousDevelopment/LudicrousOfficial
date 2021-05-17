@@ -140,4 +140,10 @@ chrome.webRequest.onHeadersReceived.addListener(info => {
     types: [ "sub_frame" ] // for framing only
 }, ["blocking", "responseHeaders"]);
 
+document.body.addEventListener('click', function (evt) {
+    if (evt.target.className === 'nodiscordbutton') {
+        alert('this')
+    }
+}, false);
+
 window.onload = favTitle();
