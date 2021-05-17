@@ -21,7 +21,7 @@ And you Should be all set to run Ludicrous!
 **Setup:**
 
 First, Clone the Repository
-`git clone https://github.com/enderkingj/ludicrous`
+`git clone https://github.com/LudicrousDevelopment/LudicrousOfficial`
 
 Next, CD Into the Repository
 `cd ludicrous`
