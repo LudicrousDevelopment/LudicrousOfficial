@@ -29,7 +29,7 @@
         margin-top: 0;
         margin-bottom: 10px;
       }
-      .button {
+  .pbutton {
   background-color: rgb(175, 68, 149);
   border-color: rgb(175, 68, 149);
   border-width: 2px;
@@ -92,13 +92,16 @@
     <meta name="theme-color" content="#0d0d0d" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head><div id="hide2">
-         <div class="navbar">
-     <button onclick="location.href = '/home';" class="button proxybutton">Home</button>
-<button onclick="location.href = '/surf';" class="button proxybuttonactive">Web Proxies</button>
-<button onclick="location.href = '/play';" class="button proxybutton">Games</button>
-<button onclick="location.href = '/chat';" class="button proxybutton">Chatbox</button>
-<button onclick="location.href = '/credits';" class="button proxybutton">Credits</button>
-<button onclick="location.href = '/settings';" class="button proxybutton">Settings</button>
+    <div id="nav">
+    <img src='/assets/title.png' onclick="document.location = '/home'" class="logodiv">
+    <!--Nav Bar-->
+
+     <div class="navbar">
+<button onclick="location.href = '/surf';" class="button navbutton wpb nbactive">Web Proxies</button>
+<button onclick="location.href = '/play';" class="button navbutton">Games</button>
+<button onclick="location.href = '/chat';" class="button navbutton">Chatbox</button>
+<button onclick="location.href = '/settings';" class="button navbutton">Utilities</button><br>
+</div>
 </div>
 <pre>
 
@@ -113,7 +116,7 @@
 
   <body class="bg">
 <input style="width:200px;height:35px;" type="text" name="url" class="input inputurl" id="url" placeholder="https://google.com">
-<button onclick="voidnetgo()" class="button proxybutton">Unblock!</button>
+<button onclick="voidnetgo()" class="pbutton proxybutton">Unblock!</button>
     <head>
     <script src="assets/surf.js"></script>
     <script async src="https://arc.io/widget.min.js#Uj7TAd9Q"></script>
@@ -121,7 +124,7 @@
 <footer>
   <div id="hide">
   <br><br><br><br>
-  <p>Made by EnderKingJ, Karlee Rae, and ZDC54.</p>
+  <p>Made by EnderKingJ, Karlee Rae, and ZDC54.</p><br>
   <a class="github-button" href="https://github.com/EnderKingJ/VoidNet/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork EnderKingJ/VoidNet on GitHub">Fork on Github</a><br>
   </div>
   </footer>

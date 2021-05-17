@@ -1,6 +1,6 @@
 const express = require('express');
-const app = express();
 const fetch = require('node-fetch');
+app = express();
 const storage = require('node-sessionstorage')
 config = require(__dirname + '/config.json'),
 
@@ -92,11 +92,11 @@ return;
 app.get('/unb', function(req, res){
     requrl = req.query.url
     urlenc = requrl;
-    res.redirect('/'+config.prefix) 
+    res.redirect('/'+config.prefix+'?path='+urlenc) 
 });
 
 app.get('/'+config.prefix, function(req, res){
-    url = atob(urlenc)
+    url = atob(req.query.path)
     url2 = url
 
 var string = url;
@@ -208,6 +208,10 @@ app.get('/home', function(req, res){
 res.sendFile('/pages/home.html', { root: __dirname + '/public' });
 });
 
+app.get('/land', function(req, res){
+res.sendFile('/pages/hometest.html', { root: __dirname + '/public' });
+});
+
 app.get('/play', function(req, res){
 res.sendFile('/pages/games.html', { root: __dirname + '/public' });
 });
@@ -216,6 +220,10 @@ res.sendFile('/pages/games.html', { root: __dirname + '/public' });
 
 app.get('/py', function(req, res){
 res.sendFile('/surfpages/pydodge.html', { root: __dirname + '/public' });
+});
+
+app.get('/tp', function(req, res){
+res.sendFile('/surfpages/translate.html', { root: __dirname + '/public' });
 });
 
 app.get('/voidnet', function(req, res){
@@ -259,6 +267,7 @@ res.sendFile('/pages/licensed.html', { root: __dirname + '/public' });
 app.use(function (req, res, next) {
   res.status(404).sendFile('/pages/error.html', {root: __dirname + '/public'})
 })
+
 app.get('/auth', function(req, res){
 res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 });
@@ -268,5 +277,5 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 PORT = process.env.PORT || config.port
 
 app.listen(PORT, function () {
-  console.log('Server listening on port '+PORT);
+  console.log('Server listening on port ' + PORT);
 });
