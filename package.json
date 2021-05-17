@@ -24,8 +24,8 @@
     "type": "git",
     "url": "git+https://github.com/VoidNetwork-dev/LudicrousOfficial.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["proxy", "proxysite", "unblocker", "unblocked", "Ludicrous", "web-unblocker"],
+  "author": "LudicrousOfficial",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/VoidNetwork-dev/LudicrousOfficial/issues"
