@@ -1,10 +1,18 @@
 const express = require('express');
 const fetch = require('node-fetch');
-app = express();
-config = require(__dirname + '/config.json'),
+const app = express();
+const config = require(__dirname + '/config.json'),
 
 atob = str => new Buffer.from(str, 'base64').toString('utf-8')
 
+let url;
+let code;
+let domain;
+let find1;
+let num;
+let test;
+let url2;
+let path2;
 let requrl;
 let urlenc;
 
@@ -273,6 +281,14 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 
 // DEPLOYMENT
 
-app.listen(process.env.PORT || config.port, function(){
+if(process.env.PORT) {
+app.listen(process.env.PORT, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
+
+} else {
+app.listen(config.port, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
+
+}
