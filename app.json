@@ -2,6 +2,6 @@
   "name": "Ludicrous",
   "description": "An Elite Web Proxy Site",
   "repository": "https://github.com/LudicrousDevelopment/LudicrousOfficial/",
-  "logo": "https://github.com/LudicrousDevelopment/LudicrousOfficial/blob/master/public/assets/favicon.jpg",
+  "logo": "https://raw.githubusercontent.com/LudicrousDevelopment/LudicrousOfficial/master/public/assets/favicon.jpg",
   "keywords": ["proxy", "web-unblocker", "internet", "Ludicrous", "bypass", "unblocked", "unblocker"]
 }
