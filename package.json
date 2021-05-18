@@ -4,6 +4,8 @@
   "description": "Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.",
   "main": "server.js",
   "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {},
   "scripts": {
