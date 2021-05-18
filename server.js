@@ -203,14 +203,8 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 
 // DEPLOYMENT
 
-if(process.env.PORT) {
-app.listen(process.env.PORT, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+const mySecret = process.env['PORT']
+console.log(mySecret)
 
-} else {
-app.listen(config.port, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
 
-}
+app.listen(mySecret, console.log('Server Running at localhost:'+process.env.PORT))
