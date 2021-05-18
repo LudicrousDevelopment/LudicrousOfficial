@@ -7,28 +7,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/indexstyle.css">
   </head>
-  <body>
+      <div id="nav">
+    <img src='/assets/title.png' onclick="document.location = '/home'" class="logodiv">
+    <!--Nav Bar-->
 
+     <div class="navbar">
+<button onclick="location.href = '/surf';" class="button navbutton wpb">Web Proxies</button>
+<button onclick="location.href = '/play';" class="button navbutton">Games</button>
+<button onclick="location.href = '/chat';" class="button navbutton">Chatbox</button>
+<button onclick="location.href = '/settings';" class="button navbutton nbactive">Utilities</button><br>
+</div>
+</div>
+  <body>
+<br><br><br>
 <div>    <header><br><br><br><br>
       <h1>IBoss Block Page Generator</h1><br>
       </header>
     <div class="form__group">
-    <input class="sbutton settingbutton" placeholder="Group Name" id="group">
+    <form id="generate" onsubmit="return generateform(event)"autocomplete="off"> 
+    <input required class="sbutton settingbutton" placeholder="Group Name" id="group">
+    <input required class="sbutton settingbutton" placeholder="Group Number" id="groupn">
     <br>
-    <input class="sbutton settingbutton" placeholder="Group Number" id="groupn">
+    <input required class="sbutton settingbutton" placeholder="Blocked Page" id="blocked">
+    <input required class="sbutton settingbutton" placeholder="Reason of Block" id="desc">
     <br>
-    <input class="sbutton settingbutton" placeholder="Blocked Page" id="blocked">
+    <input required class="sbutton settingbutton" placeholder="IP Address" id="ip">
+    <input required class="sbutton settingbutton" placeholder="UserName" id="user">
     <br>
-    <input class="sbutton settingbutton" placeholder="Reason of Block" id="desc">
-    <br>
-    <input class="sbutton settingbutton" placeholder="IP Address" id="ip">
-    <br>
-    <input class="sbutton settingbutton" placeholder="UserName" id="user">
-    <br>
-    <button class="button proxybutton" onclick="generate()">Generate!</button>
+    <input required value="Generate" type="submit" style="border-width: 1px; border-radius: 5px;" class="button proxybutton" />
+    </form>
     </div>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+    </div>
     <script>
             function generate() {
 var group = document.getElementById("group").value;

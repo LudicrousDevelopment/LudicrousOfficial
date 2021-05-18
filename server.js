@@ -1,7 +1,8 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
-const config = require(__dirname + '/config.json'),
+const config = require(__dirname + '/config.json');
+const appjs = require(__dirname + '/app.json');
 
 atob = str => new Buffer.from(str, 'base64').toString('utf-8')
 
@@ -141,6 +142,10 @@ app.get('/land', function(req, res){
 res.sendFile('/pages/hometest.html', { root: __dirname + '/public' });
 });
 
+app.get('/gen', function(req, res){
+res.sendFile('/pages/iboss.html', { root: __dirname + '/public' });
+});
+
 app.get('/play', function(req, res){
 res.sendFile('/pages/games.html', { root: __dirname + '/public' });
 });
@@ -203,8 +208,7 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 
 // DEPLOYMENT
 
-const mySecret = process.env['PORT']
-console.log(mySecret)
+const PORT = process.env['PORT'] || config.port;
 
 
-app.listen(mySecret, console.log('Server Running at localhost:'+process.env.PORT))
+app.listen(PORT, console.log(appjs.name+' is Running at localhost:'+process.env.PORT))
