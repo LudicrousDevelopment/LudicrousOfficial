@@ -274,6 +274,8 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 
 // DEPLOYMENT
 
-app.listen(process.env.PORT || config.port, function () {
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
   console.log('Server listening on port ' + PORT);
 });
