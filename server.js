@@ -1,7 +1,6 @@
 const express = require('express');
 const fetch = require('node-fetch');
 app = express();
-const storage = require('node-sessionstorage')
 config = require(__dirname + '/config.json'),
 
 atob = str => new Buffer.from(str, 'base64').toString('utf-8')
@@ -274,6 +273,6 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 
 // DEPLOYMENT
 
-app.listen(process.env.PORT || 3000, function(){
+app.listen(process.env.PORT || config.port, function(){
   console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
 });
