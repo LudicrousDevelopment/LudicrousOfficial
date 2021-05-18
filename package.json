@@ -6,6 +6,7 @@
   "dependencies": {
     "buffer": "^6.0.3",
     "express": "^4.17.1",
+    "greenlock": "^4.0.4",
     "http": "^0.0.1-security",
     "https": "^1.0.0",
     "node-fetch": "^2.6.1",
@@ -24,7 +25,14 @@
     "type": "git",
     "url": "git+https://github.com/VoidNetwork-dev/LudicrousOfficial.git"
   },
-  "keywords": ["proxy", "proxysite", "unblocker", "unblocked", "Ludicrous", "web-unblocker"],
+  "keywords": [
+    "proxy",
+    "proxysite",
+    "unblocker",
+    "unblocked",
+    "Ludicrous",
+    "web-unblocker"
+  ],
   "author": "LudicrousOfficial",
   "license": "ISC",
   "bugs": {
