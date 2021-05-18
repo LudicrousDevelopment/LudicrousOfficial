@@ -146,4 +146,9 @@ document.body.addEventListener('click', function (evt) {
     }
 }, false);
 
+function generateform(event) {
+  generate()
+  event.preventDefault();
+}
+
 window.onload = favTitle();

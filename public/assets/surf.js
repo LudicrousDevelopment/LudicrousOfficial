@@ -10,6 +10,9 @@ document.location.href="/voidnet"
 function py() {
 document.location.href="/py"
 }
+function gen() {
+document.location.href="/gen"
+}
 function molten() {
   alert("Molten Is In Beta And Will Be Ready Soon")
 }
