@@ -274,8 +274,19 @@ res.sendFile('/pages/403.html', { root: __dirname + '/public' });
 
 // DEPLOYMENT
 
-const PORT = process.env.PORT || 8080;
+var heroku = process.env.ONHEROKU
+if(heroku == 1) {
+
+PORT = process.env.PORT
+app.listen(PORT, () => {
+console.log('Server is Running at localhost:'+PORT);
+});
+
+} else {
+config = require('./config.json'),
+PORT = config.port;
 
 app.listen(PORT, () => {
-  console.log('Server listening on port ' + PORT);
+console.log(`Server is Running at localhost:${ PORT }`);
 });
+}
