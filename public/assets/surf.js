@@ -47,3 +47,4 @@ function tgo() {
     window.location = "http://translate.google.com/translate?sl=auto&tl=en&u=http://" + url 
   }
 }
+
