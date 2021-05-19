@@ -12,8 +12,8 @@
         color: white;
       }
       html, body {
-        background: linear-gradient(-45deg, #101010, #121212, #303030);
-        background-size: 200% 200%;
+        background: linear-gradient(-45deg, #747474, #4d5061, #2a2546);
+        background-size: 400% 400%;
         font-family: "Roboto", sans-serif;
         letter-spacing: 2px;
       }
@@ -60,6 +60,7 @@
       }
       .p {
         color: white;
+        font-size: 20px;
       }
       .pdiv {
         float: left;
@@ -236,7 +237,7 @@ html, body {
   margin: 0;
 }
 .footer {
-  background: #202020;
+  background: #43475c;
   border-top: 5px;
   position: fixed;
   left: 0;
