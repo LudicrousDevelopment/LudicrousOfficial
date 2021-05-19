@@ -1,4 +1,6 @@
 # Ludicrous
+<img src="ludicrous.png"/>
+
 
 Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.
 
@@ -21,19 +23,24 @@ And you Should be all set to run Ludicrous!
 **Setup:**
 
 First, Clone the Repository
-`git clone https://github.com/enderkingj/ludicrous`
-
+```shell
+git clone https://github.com/ludicrousdevelopment/ludicrousofficial
+```
 Next, CD Into the Repository
-`cd ludicrous`
-
+```shell
+cd ludicrous
+```
 Thirdly, run NPM
-`npm i | npm install`
-
+```shell
+npm i | npm install
+```
 *Set Up*
-`npm run pstart`
-
+```shell
+npm run pstart
+```
 *Start The Server*
-`npm start`
-
+```shell
+npm start
+```
 **Done! Your Server is now Ready at:**
-`localhost:(whatever port you selected in setup)`
+localhost:(whatever port you selected in setup)
