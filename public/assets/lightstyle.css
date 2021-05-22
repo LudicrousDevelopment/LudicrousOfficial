@@ -12,10 +12,11 @@
         color: white;
       }
       html, body {
-        background: linear-gradient(-45deg, #747474, #4d5061, #2a2546);
-        background-size: 400% 400%;
+        background: linear-gradient(-45deg, #6262e7, #6b75a5, #5e5a79);
+        background-size: 200% 200%;
         font-family: "Roboto", sans-serif;
         letter-spacing: 2px;
+        color: white;
       }
       .body {
         overflow: hidden;
@@ -144,16 +145,16 @@
   width: 130px;
 }
 .navbutton:hover {
-  color: #4057C8;
+  color: rgb(172, 178, 209);
   font-size: 16px;
 }
 .nbactive {
-  color: rgb(89, 98, 180);
+  color: rgb(151, 157, 212);
   background: none;
   border: none
 }
 .nbactive:hover {
-  color: rgb(89, 98, 180);
+  color: rgb(113, 120, 184);
 }
 .gobutton {
   background: none;
@@ -237,7 +238,7 @@ html, body {
   margin: 0;
 }
 .footer {
-  background: #43475c;
+  background: #5f6377;
   border-top: 5px;
   position: fixed;
   left: 0;

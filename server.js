@@ -4,7 +4,8 @@ const app = express();
 const config = require(__dirname + '/config.json');
 const appjs = require(__dirname + '/app.json');
 
-atob = str => new Buffer.from(str, 'base64').toString('utf-8')
+btoa = str => new Buffer.from(str).toString('base64'),
+atob = str => new Buffer.from(str, 'base64').toString('utf-8');
 
 let url;
 let code;
@@ -103,6 +104,19 @@ return;
     });
 });
 
+
+
+
+app.get('/test', function(req, res) {
+if (req.query.url) {
+  url = req.query.url
+  fetch(atob(url))
+    .then(res => res.text())
+    .then(body => res.send(body));
+} else {
+  res.send('<script>function b64(text) {alert(btoa(text))}</script>')
+}
+});
 // PAGE NAVIGATION //
 
 // The Following Code is for the Main Pages
@@ -148,6 +162,14 @@ res.sendFile('/pages/iboss.html', { root: __dirname + '/public' });
 
 app.get('/play', function(req, res){
 res.sendFile('/pages/games.html', { root: __dirname + '/public' });
+});
+
+app.get('/tos', function(req, res){
+res.sendFile('/pages/tos.html', { root: __dirname + '/public' });
+});
+
+app.get('/privacy', function(req, res){
+res.sendFile('/pages/privacy.html', { root: __dirname + '/public' });
 });
 
 // Proxy Pages
