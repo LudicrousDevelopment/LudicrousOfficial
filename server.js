@@ -168,6 +168,10 @@ app.get('/tos', function(req, res){
 res.sendFile('/pages/tos.html', { root: __dirname + '/public' });
 });
 
+app.get('/discord', function(req, res){
+res.sendFile('/pages/discord.html', { root: __dirname + '/public' });
+});
+
 app.get('/privacy', function(req, res){
 res.sendFile('/pages/privacy.html', { root: __dirname + '/public' });
 });
@@ -188,6 +192,10 @@ res.sendFile('/surfpages/VoidNet.html', { root: __dirname + '/public' });
 
 app.get('/womginx', function(req, res){
 res.sendFile('/surfpages/womginx.html', { root: __dirname + '/public' });
+});
+
+app.get('/bookmarks', function(req, res){
+res.sendFile('/pages/bookmarks.html', { root: __dirname + '/public' });
 });
 
 app.get('/alloy', function(req, res){

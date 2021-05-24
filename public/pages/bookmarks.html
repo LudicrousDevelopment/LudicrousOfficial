@@ -12,7 +12,6 @@
     <meta name="theme-color" content="#0d0d0d" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-
     <div id="nav">
     <img src='/assets/title.png' onclick="document.location = '/home'" class="logodiv">
     <!--Nav Bar-->
@@ -20,9 +19,9 @@
      <div class="navbar">
 <button onclick="location.href = '/surf';" class="button navbutton wpb">Web Proxies</button>
 <button onclick="location.href = '/discord';" class="button navbutton">Discord</button>
-<button onclick="location.href = '/play';" class="button navbutton">Games</button>
+<button class="button navbutton nbactive">Games</button>
 <button onclick="location.href = '/chat';" class="button navbutton">Chatbox</button>
-<button class="button navbutton nbactive">Utilities</button><br>
+<button onclick="location.href = '/settings';" class="button navbutton">Utilities</button><br>
 </div>
 </div>
 <body>
@@ -33,27 +32,14 @@
 
 
 
-
-
-    <div></pre>
-<h1>Utilities</h1><br>
-<button class="button settingbutton" style="width:200px;" onclick="co();">Reset Favicon and Title</button><br><br><br>
-<p>Set Page Favicon</p><br><br>
-<input class="button settingbutton" style="width:175px;height:21px;" id="favurl" placeholder="Image URL">
-<button class="button settingbutton" onclick="favco();">Set Favicon</button>
-  <br><br><br>
-  <p>Set Page Title</p><br><br>
-  
-  <input class="button settingbutton sinput" style="width:175px;height:21px;" placeholder="Title" id="tchange">
-  <button class="button settingbutton" onclick="titlechange()">Set Title</button><br><br><br>
-<button style="width:230px;" onclick="tp();" class="button proxybutton">Translate Proxy</button><br><br>
-<button style="width:230px;" onclick="location.href = '/gen'" class="button proxybutton">IBoss Block Page Generator</button>
-<br><br>
-<button id="amogus" style="width:auto;" onclick="light()" class="button proxybutton">Light Mode</button>
-<button style="width:auto;" onclick="dark()" class="button proxybutton">Dark Mode</button>
-<br><br>
-</div><br><br><br><br><br><br><br><br>
-
+    <div>
+<h1>Games</h1>
+<p>Play Your Favorite Games, Free of any Web Blocker!</p></pre>
+</div>
+  <body>
+<button onclick="porta()" class="button proxybutton">Porta Proxy</button>
+<button onclick="location.href = '/flashem';" class="button proxybutton">Emulators</button>
+<button style="width: 130px;" onclick="location.href = '/html5';" class="button proxybutton">HTML5 Games</button>
     <head>
     <script async src="https://arc.io/widget.min.js#Uj7TAd9Q"></script>
 <footer class="footer">
@@ -77,7 +63,16 @@
   </div>
   </div>
   </head>
-<script src="assets/surf.js"></script>
 <script src="assets/pageft.js"></script>
+<p id="hiddenporta" style="display: none;">
+  function porta(){var a=document.getElementById("rusic-modal")||document.createElement("iframe");a.setAttribute("allow","fullscreen");a.src=prompt("enter url");a.id="rusic-modal";a.style="position:fixed;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:2147483647;background-color:white;border:none;";document.body.appendChild(a);};
+</p>
+<script>
+function porta(){
+  var copyText = document.getElementById('hiddenporta').innerHTML;
+  copyText.select();
+  document.execCommand("copy");};
+
+</script>
   </body>
 </html>

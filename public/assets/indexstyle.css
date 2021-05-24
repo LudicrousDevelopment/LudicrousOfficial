@@ -359,7 +359,7 @@ input {
 .htmlbutton {
   background: none;
   width: 32%;
-  height: 75px;
+  height: auto;
   margin-bottom: 15px;
   color: rgb(255, 255, 255); 
   border: solid;
