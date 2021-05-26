@@ -1,8 +1,11 @@
 const express = require('express');
 const fetch = require('node-fetch');
 const app = express();
+const getHrefs = require('get-hrefs');
 const config = require(__dirname + '/config.json');
 const appjs = require(__dirname + '/app.json');
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
 
 btoa = str => new Buffer.from(str).toString('base64'),
 atob = str => new Buffer.from(str, 'base64').toString('utf-8');
@@ -110,11 +113,17 @@ return;
 app.get('/test', function(req, res) {
 if (req.query.url) {
   url = req.query.url
-  fetch(atob(url))
-    .then(res => res.text())
-    .then(body => res.send(body));
+fetch(url).then(function (res) {
+        console.log(url)
+        return res.text();
+    
+    }).then(function (text) {
+      text = getHrefs(text)
+      console.log(text)
+      res.send(text)
+    })
 } else {
-  res.send('<script>function b64(text) {alert(btoa(text))}</script>')
+  res.send(`<input id="text"><button onclick='alert(btoa(document.getElementById("text").value))'>Encrypt!</button>`)
 }
 });
 // PAGE NAVIGATION //
@@ -124,6 +133,7 @@ if (req.query.url) {
 app.use(express.static('public'))
 
 app.get('/', function(req, res){
+res.cookie('epic', 'gamer', {expire: 3600000 + Date.now()});
 res.sendFile('/pages/index.html', { root: __dirname + '/public' });
 console.log('Someone has logged onto Ludicrous!')
 });

@@ -1,5 +1,5 @@
 # Ludicrous
-<img src="ludicrous.png"/>
+<img src="public/assets/ludicrous.png"/>
 
 
 Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.
