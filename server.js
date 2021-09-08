@@ -138,9 +138,9 @@ res.sendFile('/pages/index.html', { root: __dirname + '/public' });
 console.log('Someone has logged onto Ludicrous!')
 });
 
-app.get('/guide', function(req, res){
-res.sendFile('/assets/guide.html', { root: __dirname + '/public' });
-});
+//app.get('/guide', function(req, res){
+//res.sendFile('/assets/guide.html', { root: __dirname + '/public' });
+//});
 
 app.get('/settings', function(req, res){
 res.sendFile('/pages/settings.html', { root: __dirname + '/public' });
@@ -163,7 +163,7 @@ res.sendFile('/pages/home.html', { root: __dirname + '/public' });
 });
 
 app.get('/land', function(req, res){
-res.sendFile('/pages/hometest.html', { root: __dirname + '/public' });
+res.sendFile('/pages/land.html', { root: __dirname + '/public' });
 });
 
 app.get('/gen', function(req, res){
