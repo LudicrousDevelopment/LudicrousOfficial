@@ -1,8 +1,7 @@
 # Ludicrous
-<img src="public/assets/ludicrous.png"/>
+<img src="public/assets/ludicrous.png">
 
-
-Ludicrous Is An Upcoming Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.
+Ludicrous Is A Web Proxy Site (More Comonly Known As An Unblocker Site) Made By EnderKingJ And Karlee Rae.
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/LudicrousDevelopment/LudicrousOfficial/tree/master)
 &nbsp;
@@ -24,7 +23,7 @@ And you Should be all set to run Ludicrous!
 
 First, Clone the Repository
 ```shell
-git clone https://github.com/ludicrousdevelopment/ludicrousofficial
+git clone https://github.com/LudicrousDevelopment/LudicrousOfficial
 ```
 Next, CD Into the Repository
 ```shell
