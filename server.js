@@ -212,6 +212,10 @@ app.get('/alloy', function(req, res){
 res.sendFile('/surfpages/alloy.html', { root: __dirname + '/public' });
 });
 
+app.get('/smoke', function(req, res){
+res.sendFile('/surfpages/smoke.html', { root: __dirname + '/public' });
+});
+
 // Games
 
 app.get('/games', function(req, res){
