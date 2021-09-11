@@ -23,7 +23,7 @@ window.location.assign('http://a.'+document.location.host+`/prox/?url=${btoa(ain
 
 function smokego() {
   var ainput = document.getElementById('url')
-  window.location.assign('/go/${ ainput.value }`);
+  window.location.assign('http://'+document.location.host+`/go/${ ainput.value }`);
 }
 
 function womginxgo() {
