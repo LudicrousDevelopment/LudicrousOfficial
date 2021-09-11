@@ -1,3 +1,6 @@
+function smoke() {
+document.location.href="/smoke"
+}
 function alloy() {
 document.location.href="/alloy"
 }
