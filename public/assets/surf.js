@@ -16,13 +16,16 @@ document.location.href="/py"
 function gen() {
 document.location.href="/gen"
 }
-function molten() {
-  alert("Molten Is In Beta And Will Be Ready Soon")
-}
 function alloygo() {
 var ainput = document.getElementById('url')
 window.location.assign('http://a.'+document.location.host+`/prox/?url=${btoa(ainput.value)}`);
 }
+
+function smokego() {
+  var ainput = document.getElementById('url')
+  window.location.assign('/go/${ ainput.value }`);
+}
+
 function womginxgo() {
 var url = document.getElementById("url").value
 document.cookie = "womginx_are_you_a_bot=no";
